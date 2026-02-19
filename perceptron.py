@@ -31,11 +31,12 @@ X = np.array([[0,0],[0,1],[1,0],[1,1]])
 y_and = np.array([0,0,0,1])
 y_or  = np.array([0,1,1,1])
 
-# Train AND
+# Train  AND
 p = Perceptron()
 p.fit(X, y_and)
 print("AND Predictions:", p.predict(X))
 
-# Train OR
+# Train  OR
 p.fit(X, y_or)
+
 print("OR Predictions:", p.predict(X))
